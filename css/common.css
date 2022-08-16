@@ -26,12 +26,15 @@ button {
 .gallery {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 .gallery_img {
-  width: 90vw;
-  /* height: 340px; */
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 30vw;
+  height: 70vh;
 }
 .gallery_item + .gallery_item {
-  margin-top: 30px;
+  margin-left: 30px;
 }
