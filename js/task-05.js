@@ -10,8 +10,8 @@ function onInputChange(event) {
   //   if (event.currentTarget.value === ``) {
   //     spanRef.textContent = `Anonymous`;
   //     }
-
+  let currentValue = event.currentTarget.value.trim();
   event.currentTarget.value === ``
     ? (spanRef.textContent = `Anonymous`)
-    : (spanRef.textContent = event.currentTarget.value);
+    : (spanRef.textContent = currentValue);
 }
