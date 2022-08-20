@@ -7,5 +7,8 @@ function checkTextInput(event) {
   if (textValue.length === Number(inputText.getAttribute(`data-length`))) {
     inputText.classList.add(`valid`);
     inputText.classList.remove(`invalid`);
-  } else inputText.classList.add(`invalid`);
+  } else {
+    inputText.classList.add(`invalid`);
+    inputText.classList.remove(`valid`);
+  }
 }
